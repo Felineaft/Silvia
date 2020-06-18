@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+
+<link rel="shortcut icon" href="/layout/favicon.ico?v=0,8977472" />
+
+
+    <!-- SERVIÇOS -->
+    
+
+    <!-- COMPONENTS -->
+    
+
+    <!-- Controller -->
+    
+
+    <meta charset="ISO-8859-1">    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Consultora Magic | Home</title>
+        
+	<meta name="Description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="JET e-business">
+
+	
+	<meta property="og:title" content="Consultora Magic">
+	<meta property="og:image" content="https://www.consultoramagic.com.br/layout/logo.png">
+	<meta property="og:url" content="https://www.consultoramagic.com.br">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:description" content="">
+
+	
+	<meta name="twitter:title" content="Consultora Magic">
+	<meta name="twitter:image" content="https://www.consultoramagic.com.br/layout/logo.png">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:description" content="">
+
+<script type="text/javascript" src="/sys/templates/default/scripts/jquery_new.js?v=14"></script>
+<link href="/assets/semantic-ui/semantic.min.css?v=14" rel="stylesheet" type="text/css">
+<link href="/assets/css/adapt.css?v=14" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    
+    <!-- [UOL] iframe session transfer -->
+    <iframe id="iframecontrol" name="iframecontrol" style="width:0px; height:0px; display: none;"></iframe>
+    <input type="hidden" name="hdnUrlR" id="hdnUrlR" value="https://cosmetologiaavancada.minhalojanouol.com.br/sys/templates/default/utilities/sessao_trans_redirect.asp?dgb=1&t=ScVDCmxiGDj9fYnVNpi8rg%3D%3D&u=r8uXRhG5ZKTaWmHT0WLEdsbQJ5qICzRk45uNp1QERF%2FN7oPkpzQ54A%3D%3D&i=qg7xgrbcehc%3D" />
+	<script type="text/javascript">
+		function redirectPostTarget(target, location, args) {
+			var form = '';
+			$.each(args, function(key, value) {
+				form += '<input type="hidden" name="' + key + '" value="' + value + '">';
+			});
+			$('<form action="' + location + '" method="POST" target="' + target + '">' + form + '</form>').appendTo('body').submit();
+		}
+
+		$(window).on("load", function () {
+			redirectPostTarget('iframecontrol', 'https://cosmetologiaavancada.minhalojanouol.com.br/sys/templates/default/utilities/sessao_trans_iframe.asp?dgb=1&t=ScVDCmxiGDj9fYnVNpi8rg%3D%3D&u=r8uXRhG5ZKTaWmHT0WLEdsbQJ5qICzRk45uNp1QERF%2FN7oPkpzQ54A%3D%3D&i=qg7xgrbcehc%3D', {});
+		});
+	</script>
+
+<!-- HEADER -->
+<header class="main-header" id="mainHeader">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <!-- Botão do menu responsivo -->
+            <div class="col-3 col-md-1 d-lg-none-custom pl-2 nav-toggler-holder pos-absolute">
+                <a class="nav-toggler-icon" id="navTogglerBtn">
+                    <span class="far fa-bars"></span>
+                </a>
+            </div>
+            <!-- BUSCA -->
+            <section class="dLG-none-custom col-md-4 col-lg-4 px-2 pos-abs">
+                
+        <section class="search">
+            <form method="GET" name="searchForm" id="searchFormDesktop" action="/busca.asp" autocomplete="off">
+                <div class="input-group">
+                    <label></label>
+                    <input name="t" id="searchInput" type="text" maxlength="40" placeholder="Buscar..." onkeyup="return KeyPress_Completar(this.value,'ResultadoBusca');" />
+                    <div id="search" onclick="BuscarProdutos('searchFormDesktop');">
+                        <span id="searchButtonIcon" class="fa fa-search st-search-button-title"></span>
+                    </div>
+                </div>
+               
+            </form>
+             <div data-id="ResultadoBusca" class="auto-search"></div>
+        </section>
+
+
+            </section>
+            <!-- LOGO -->
+            <div class="img-logo img-center">
+                <a href="/" title="Página Inicial">
+                    
+                    <img src="/layout/logo.png" title="Página Inicial" alt="Página Inicial" />
+                    
+                </a>
+            </div>
+
+            <div class="btn-control-access">
+                <div class="item">
+                    
+                    <a href="javascript:void(0)" onclick="EncaminharCentralCliente();" title="Central do Cliente" class="h-item">
+                        <!--<span class="fa fa-user"></span>-->
+                        <span class="fa fa-user st-login-link"></span>
+                        <span class="ml-1 st-login-link hiddem-mobile txt-upper">Central do Cliente</span>
+                    </a>
+                    
+                </div>
+                <div class="item line-gradient-vertical"></div>
+                <div class="item hiddem-mobile">
+                    <div class="content h-item">
+                        <a href="http://www.consultoramagic.com.br/fale-conosco" title="FALE CONOSCO" class="divider-link-topo mr-icon-topo">
+                            <span class="ml-1 d-sm-inline-block st-top-link mobileHide">FALE CONOSCO</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="item line-gradient-vertical lgv-hide-mobile hiddem-mobile"></div>
+                <div class="item">
+                    
+                        <a href="#" id="cartComponent" class="mini-cart-topo">
+                            <img src="/layout/icon_cart.png?v=0,4538777" alt="carrinho" />
+                            <div class="cart-quantity"><span class="cart-quantity-value st-cart-items">0</span></div>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <div class="line-gradient"></div>
+        </div>
+    </div>
+    <div class="barraFlutuante" id="barraFlutuante">
+        <div class="mobile-search d-lg-none-custom">
+            
+        <section class="search">
+            <form method="GET" name="searchForm" id="searchFormMobile" action="/busca.asp" autocomplete="off">
+                <div class="input-group">
+                    <label></label>
+                    <input name="t" id="searchInput" type="text" maxlength="40" placeholder="Buscar..." onkeyup="return KeyPress_Completar(this.value,'ResultadoBusca');" />
+                    <div id="search" onclick="BuscarProdutos('searchFormMobile');">
+                        <span id="searchButtonIcon" class="fa fa-search"></span>
+                    </div>
+                </div>
+               
+            </form>
+             <div data-id="ResultadoBusca" class="auto-search"></div>
+        </section>
+
+
+        </div>
+    </div>
+    <div style="display: none">
+        Usuario:
+    </div>
+</header>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-71791696-1', 'auto', {'name': 'JETUOL'});
+ga('require', 'displayfeatures');
+
+ga('JETUOL.send', 'pageview');
+</script>
+<div style="display: none;">
+active: D3-EJET-LOJA17 - 9005581 - 376214051 - 376214051
+</div>
+	<section class="anime-nav-wrapper" id="animeSidebar">
+		<div class="nav-holder" id="navHolder">
+			<div class="divider"></div>
+			<div class="main-nav st-nav-bg">
+				<div class="container">
+<nav class="category-tree"><ul class="root-nav">
+		<li class="st-nav-bg-active">
+			<a href="http://www.consultoramagic.com.br/Paginas/39685/resultados" title="Resultados" class="st-nav-title">
+				<span class="category-label">Resultados</span>
+			</a>
+		</li>
+
+			<li class="st-nav-bg-active">
+				<div class="subtree-btn"><span class="fa fa-chevron-down"></span></div>
+				 <a href="http://www.consultoramagic.com.br/departamento/52646/03/produtos" title="Produtos" class="st-nav-title">
+					<span class="category-label">Produtos</span>
+				</a>
+				<ul class="st-nav-bg-line ch-1">
+			<li>
+				<a href="http://www.consultoramagic.com.br/departamento/52647/0301/queda-de-cabelo" title="Queda de cabelo" class="st-nav-title-active">
+					<div class="subtree-btn"><span class="fa fa-chevron-down"></span></div>
+					<span class="category-label">Queda de cabelo</span>
+					
+				</a>
+				
+			</li>
+
+			<li>
+				<a href="http://www.consultoramagic.com.br/departamento/52649/0302/hidratacao-de-cabelo" title="Hidratação de cabelo" class="st-nav-title-active">
+					<div class="subtree-btn"><span class="fa fa-chevron-down"></span></div>
+					<span class="category-label">Hidratação de cabelo</span>
+					
+				</a>
+				
+			</li>
+
+			<li>
+				<a href="http://www.consultoramagic.com.br/departamento/52650/0303/complexo-vitaminico" title="Complexo Vitamínico" class="st-nav-title-active">
+					<div class="subtree-btn"><span class="fa fa-chevron-down"></span></div>
+					<span class="category-label">Complexo Vitamínico</span>
+					
+				</a>
+				
+			</li>
+
+			<li>
+				<a href="http://www.consultoramagic.com.br/departamento/52656/0304/cilios-e-sobrancelhas" title="Cílios e sobrancelhas" class="st-nav-title-active">
+					<div class="subtree-btn"><span class="fa fa-chevron-down"></span></div>
+					<span class="category-label">Cílios e sobrancelhas</span>
+					
+				</a>
+				
+			</li>
+
+			<li>
+				<a href="http://www.consultoramagic.com.br/departamento/52660/0306/labios" title="Lábios" class="st-nav-title-active">
+					<div class="subtree-btn"><span class="fa fa-chevron-down"></span></div>
+					<span class="category-label">Lábios</span>
+					
+				</a>
+				
+			</li>
+
+			<li>
+				<a href="http://www.consultoramagic.com.br/departamento/52661/0307/cachos" title="Cachos" class="st-nav-title-active">
+					<div class="subtree-btn"><span class="fa fa-chevron-down"></span></div>
+					<span class="category-label">Cachos</span>
+					
+				</a>
+				
+			</li>
+
+			<li>
+				<a href="http://www.consultoramagic.com.br/departamento/52662/0308/shampoo" title="Shampoo" class="st-nav-title-active">
+					<div class="subtree-btn"><span class="fa fa-chevron-down"></span></div>
+					<span class="category-label">Shampoo</span>
+					
+				</a>
+				
+			</li>
+</ul>
+			</li>
+</ul></nav>
+				</div>
+			</div>
+			<div class="divider"></div>
+			<!-- Botão do menu responsivo -->
+			<div class="nav-toggler-holder d-lg-none-custom">
+				<div class="st-nav-bg nav-toggler-icon" id="navTogglerBtn">
+					<!--<span class="fa fa-navicon"></span>-->
+                    <i class="fas fa-times"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+    <div id="ContainerFiltroProduto">
+	    <div class="full-banner" id="DivFullBannersRandom">		    
+	    </div>
+	    <div class="full-banner" id="DivFullBannersNotRandom">		    
+	    </div>
+
+
+	    <!-- MARCA DE PRODUTOS -->
+        <div class="row my-5" id="brandsGadget">
+        </div>
+
+        <!-- LISTA DE PRODUTOS DA VITRINE -->        
+        <section class="row" id="CabecalhoProdutosVitrine">
+            <div class="mt-90-auto">
+                <h2 class="title-section center mb-2">PRODUTOS EM DESTAQUE</h2>
+                <div class="ui grid container">
+                    <div class="row">
+                        <div class="line-gradient"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-list show-case">
+            <input type="hidden" name="CampoBuscaModal" id="CampoBuscaModal" value="S" />
+            <input type="hidden" name="InicioConsultaHome" id="InicioConsultaHome" value="1" />
+            <input type="hidden" name="NumeroMaximoVitrine" id="NumeroMaximoVitrine" value="12" />
+            <input type="hidden" name="AcabouProdutos" id="AcabouProdutos" value="N" />
+            <input type="hidden" name="CarregandoProdutos" id="CarregandoProdutos" value="N" />
+
+            <div class="ui container">
+                <div class="ui grid ml-0 mr-0">
+                    <div class="row one column">
+                        <div class="column">
+                            <div class="ui doubling four cards centered" id="DivProdutosVitrine">                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+	    <!-- HALF BANNERS -->
+	    <div class="row" data-name="DivOcultasInicio">
+		    <div class="ui grid container centered">
+			    <div class="ui stackable two column">
+				    <div class="column half-banner" id="DivHalfBannerVitrine">					    
+				    </div>
+				    <div class="column half-banner" id="DivHalfBannerNotRandomVitrine">					    
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+
+        <!-- GRUPOS DE PRODUTOS -->
+	    <div class="container" data-name="DivOcultasInicio" id="DivGruposVitrine">
+	    </div>
+
+    </div>
+
+<link href="/assets/css/vendors.css?v=14" rel="stylesheet" type="text/css">
+<link href="/assets/css/font-awesome-pro/css/all.min.css?v=14" rel="stylesheet" type="text/css">
+<script async type="text/javascript" src="/assets/js/popup.js?v=14"></script>
+<link href="/sys/templates/default/scripts/jquery.colorbox.min.css?v=14" rel="stylesheet" type="text/css">
+<link href="/sys/templates/default/scripts/jquery-confirm.min.css?v=14" rel="stylesheet" type="text/css">
+<script async type="text/javascript" src="/assets/semantic-ui/semantic.min.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/product-variations.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/variations-standard-view.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/banners.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/commons.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/detail-product-images.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/details.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/filter-config.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/header.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/html5shiv.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/installment.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/minicart.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/navigation.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/notifyer.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/search.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/jquery.magnific-popup.min.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/bandolim-zoom.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/jquery.price_format.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/jquery.scrollbar.min.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/variations.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/grade/detalhes_grade.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/grade/facilitador_grade.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/jquery.colorbox-min.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/jquery-confirm.min.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/jquery.matchHeight.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/owl.carousel.min.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/jquery.mask.min.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/functions_custom.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/jquery.countdown.js?v=14"></script>
+<script async type="text/javascript" src="/sys/templates/default/scripts/home.js?v=14"></script>
+<link href="/config/store.css?v=8149" rel="stylesheet" type="text/css">
+
+    <input type="hidden" name="ProdutosIgnorar" id="ProdutosIgnorar" value="" />
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            /* Carregar Full-Banners randomicos */
+            CarregarFullBanners(1);
+
+            setTimeout(function () {
+                /* Carregar Full-Banners não randomicos */
+                CarregarFullBanners(0);
+            }, 250);
+
+            setTimeout(function () {
+                /* Marcas da vitrine. */
+                LoadingHomeBrands();
+            }, 250);
+
+            /* Oferta Relampago */
+            if ($("#carouselOfertaRelampago").length > 0) {
+                CarregamentoInicialOfertaRelampago();
+
+                setTimeout(function () {
+                    /* Produtos da Vitrine */
+                    CarregarProdutosIniciaisVitrine();
+                }, 250);
+            } else {
+                /* Produtos da Vitrine */
+                CarregarProdutosIniciaisVitrine();
+            }
+
+            setTimeout(function () {
+                /* Carregar Half-Banners randomicos */
+                CarregarHalfBanners(1);
+
+                /* Carregar Half-Banners não randomicos */
+                CarregarHalfBanners(0);
+            }, 250);
+
+            setTimeout(function () {
+                /* Grupos da Vitrine */
+                CarregarGruposVitrine();
+            }, 250);
+
+            setTimeout(function () {
+                /* Rodapé. */
+                CarregarRodapeLoja();
+            }, 250);
+
+		    $.fn.matchHeight._maintainScroll = true;
+		});
+    </script>
+</body>
+</html>
